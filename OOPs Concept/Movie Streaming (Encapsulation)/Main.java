@@ -1,7 +1,7 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-       Attributes a=new Attributes();
+       UserWatchStats a=new UserWatchStats();
        a.setTotalWatchTime(180);
        a.setMoviesWatched(4);
        a.setPausedCount(3);
@@ -15,7 +15,7 @@ public class Main {
        System.out.println("High Engagement: "+ a.isHighEngagement(as));
     }
 }
-class Attributes{
+class UserWatchStats{
     private int totalWatchTime=0;
     private int moviesWatched=0;
     private int pausedCount=0;
